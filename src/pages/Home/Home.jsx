@@ -33,12 +33,6 @@ const Home = () => {
 					</div>
 				)}
 			</div>
-			{/* {console.log(
-				'Liste des locations : ',
-				listOfPlaces && listOfPlaces,
-				"/NMessage d'erreur : ",
-				error && error
-			)} */}
 		</div>
 	);
 };

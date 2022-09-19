@@ -9,6 +9,7 @@ const useFetch = (url, id) => {
 		if (!url) return;
 
 		setLoading(true);
+
 		if (!id) {
 			const fetchData = async () => {
 				try {

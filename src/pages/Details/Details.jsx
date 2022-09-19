@@ -5,7 +5,7 @@ import Loader from '../../components/Loader/Loader';
 import Carousel from '../../components/Carousel/Carousel';
 import Tag from '../../components/Tag/Tag';
 import Rating from '../../components/Rating/Rating';
-import DropdownDetails from '../../components/DropdownDetails/DropdownInfos';
+import DropdownDetails from '../../components/DropdownDetails/DropdownDetails';
 
 import './Details.css';
 
@@ -16,7 +16,6 @@ const Details = () => {
 	const error = errorMessage;
 
 	return (
-		// console.log('id : ', id, '\nplace: ', place),
 		<div className="details">
 			{isError ? (
 				<div className="error">
@@ -44,11 +43,13 @@ const Details = () => {
 								<p className="owner_name">{place.host.name}</p>
 								<img src={place.host.picture} alt={place.host.name} />
 							</div>
-							{/* {console.log('place.host.rating : ', place.rating)} */}
 							<Rating value={place.rating} />
 						</div>
 					</div>
-					<DropdownDetails infos={place.description} options={place.equipments} />
+					<div className="dropdown_menus">
+						<DropdownDetails title={'Description'} infos={place.description} />
+						<DropdownDetails title={'Equipements'} infos={place.equipments} />
+					</div>
 				</div>
 			)}
 		</div>
