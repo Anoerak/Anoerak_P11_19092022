@@ -1,20 +1,12 @@
 .carousel {
 	position: relative;
-	width: 86%;
+	width: 100%;
 	height: 415px;
 	margin: 0;
 	padding: 0;
 	border-radius: 25px;
 	list-style: none;
-}
-
-.carousel img {
-	filter: brightness(0.5);
-	position: relative;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 25px;
+	margin-bottom: 30px;
 }
 
 .carousel .controls {
@@ -29,22 +21,65 @@
 }
 
 .carousel .controls .prev,
-.carousel .controls .next,
-.carousel .controls .down {
-	color: red;
-	font-size: 30px;
-	font-weight: 700;
+.carousel .controls .next {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.carousel .controls .prev:hover,
+.carousel .controls .next:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.35);
 }
 
 .prev {
-	cursor: pointer;
 	margin-left: 2rem;
 }
 .next {
-	cursor: pointer;
 	margin-right: 2rem;
 }
-.down {
-	align-self: flex-end;
-	margin-bottom: 2rem;
+
+.carousel .controls .prev svg path,
+.carousel .controls .next svg path {
+	fill: white;
+}
+
+.carousel .controls .prev svg,
+.carousel .controls .next svg {
+	height: 79px;
+	width: 46.7px;
+}
+
+.carousel .mySlides .number_text {
+	color: white;
+	position: absolute;
+	bottom: 26px;
+	right: 47.5%;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25.6px;
+	z-index: 5;
+}
+
+.carousel img {
+	position: relative;
+	width: 100%;
+	height: 415px;
+	border-radius: 25px;
+	object-fit: cover;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
 }

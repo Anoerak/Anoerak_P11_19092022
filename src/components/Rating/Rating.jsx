@@ -7,7 +7,7 @@ const Rating = (value) => {
 	// const faSolidStar = <FontAwesomeIcon icon={faStar} className="star" />;
 	let rating = 'rating';
 	const ratingValue = rating.concat(JSON.parse(value.value));
-	console.log(ratingValue);
+	// console.log(ratingValue);
 
 	return (
 		<div className={ratingValue}>
