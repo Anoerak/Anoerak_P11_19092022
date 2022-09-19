@@ -4,9 +4,9 @@ import { PropTypes } from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-import './CollapseDetails.css';
+import './DropdownInfos.css';
 
-const DropdownDetails = ({ title, infos, options }) => {
+const DropdownDetails = ({ infos, options }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggle = () => setIsOpen(!isOpen ? true : false);
 
@@ -45,7 +45,7 @@ const DropdownDetails = ({ title, infos, options }) => {
 		<div className="dropdown_menus">
 			<div className="infos_container">
 				<div className="infos_title">
-					<h3>{title}</h3>
+					<h3>Description</h3>
 					<button onClick={() => [toggle(), handleCollapseInfos()]}>
 						{faSolidDownInfos}
 						{faSolidUpInfos}
@@ -56,7 +56,7 @@ const DropdownDetails = ({ title, infos, options }) => {
 
 			<div className="infos_container">
 				<div className="infos_title">
-					<h3>{title}</h3>
+					<h3>Équipements</h3>
 					<button onClick={() => [toggle(), handleCollapseOptions()]}>
 						{faSolidDownOptions}
 						{faSolidUpOptions}

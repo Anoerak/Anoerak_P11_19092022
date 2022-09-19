@@ -4,9 +4,9 @@ import { useState } from 'react';
 export const Context = React.createContext();
 
 const ContextProvider = ({ children }) => {
-	const [cart, setCart] = useState([]);
+	const [prop, setProp] = useState([]);
 
-	return <Context.Provider value={{ cart, setCart }}>{children}</Context.Provider>;
+	return <Context.Provider value={{ prop, setProp }}>{children}</Context.Provider>;
 };
 
 export default ContextProvider;

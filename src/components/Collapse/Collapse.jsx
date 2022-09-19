@@ -27,7 +27,7 @@ const DropdownInfos = ({ title, infos }) => {
 	const faSolidUpInfos = <FontAwesomeIcon icon={faChevronUp} className={styleInfos} />;
 
 	return (
-		<div className="dropdown_menus">
+		<div className="collapse_menus">
 			<div className="infos_container">
 				<div className="infos_title">
 					<h3>{title}</h3>

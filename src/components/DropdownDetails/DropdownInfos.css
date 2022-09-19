@@ -2,12 +2,13 @@
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	margin: 16.5px 0;
 }
 
 .dropdown_menus .infos_container {
 	display: flex;
 	flex-direction: column;
-	width: 45%;
+	width: 47%;
 	max-width: 582px;
 	border-radius: 10px;
 	color: var(--tertiary-color);

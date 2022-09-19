@@ -1,5 +1,8 @@
 @import './variables.css';
 
+html {
+	height: -webkit-fill-available;
+}
 body {
 	margin: auto;
 	max-width: 1440px;
