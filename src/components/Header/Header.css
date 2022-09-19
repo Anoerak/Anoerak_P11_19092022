@@ -1,0 +1,25 @@
+header {
+	height: 68px;
+	margin: 40px 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .kasa_logo {
+	width: 210px;
+	height: 68px;
+}
+
+header nav a {
+	color: var(--primary-color);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 142.6%;
+	margin-left: 57px;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}

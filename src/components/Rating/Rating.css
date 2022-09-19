@@ -1,0 +1,29 @@
+svg {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+
+svg path {
+	fill: var(--rating-color);
+}
+
+.rating1 svg:nth-child(1) path {
+	fill: var(--primary-color);
+}
+
+.rating2 svg:nth-child(-n + 2) path {
+	fill: var(--primary-color);
+}
+
+.rating3 svg:nth-child(-n + 3) path {
+	fill: var(--primary-color);
+}
+
+.rating4 svg:nth-child(-n + 4) path {
+	fill: var(--primary-color);
+}
+
+.rating5 svg:nth-child(-n + 5) path {
+	fill: var(--primary-color);
+}
