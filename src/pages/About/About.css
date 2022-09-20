@@ -1,5 +1,5 @@
 .about {
-	height: 875px;
+	min-height: 875px;
 	margin: 0px 100px;
 	display: flex;
 	flex-direction: column;

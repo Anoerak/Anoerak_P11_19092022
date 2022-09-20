@@ -7,7 +7,8 @@ import Card from '../../components/Card/Card';
 import './Home.css';
 
 const Home = () => {
-	const { data, loading, isError, errorMessage } = useFetch('datas.json');
+	// const { data, loading, isError, errorMessage } = useFetch('http://localhost:3001/datas');
+	const { data, loading, isError, errorMessage } = useFetch('./datas.json');
 	const listOfPlaces = data;
 	const error = errorMessage;
 
