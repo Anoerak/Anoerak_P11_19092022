@@ -38,3 +38,14 @@
 	z-index: 5;
 	color: var(--tertiary-color);
 }
+
+@media screen and (max-width: 768px) {
+	.card {
+		width: 335px;
+		height: 255px;
+		padding: 0px;
+	}
+	.card:after {
+		border-radius: 10px;
+	}
+}

@@ -14,3 +14,15 @@ footer p {
 	margin: 0;
 	margin-bottom: 29px;
 }
+
+@media screen and (max-width: 768px) {
+	footer {
+		margin-top: 10px;
+	}
+	footer p {
+		font-size: 12px;
+		line-height: 17px;
+		margin-bottom: 62px;
+		margin-top: 38.5px;
+	}
+}

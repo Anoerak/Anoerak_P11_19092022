@@ -27,3 +27,10 @@ svg path {
 .rating5 svg:nth-child(-n + 5) path {
 	fill: var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {
+	svg {
+		width: 15px;
+		height: 15px;
+	}
+}

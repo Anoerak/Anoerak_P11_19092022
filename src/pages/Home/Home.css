@@ -13,7 +13,6 @@
 	height: 223px;
 	border-radius: 25px;
 	margin-bottom: 43px;
-	z-index: 1;
 }
 
 .main .home_background p {
@@ -21,13 +20,12 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: 25px;
-	backdrop-filter: brightness(0.75);
+	backdrop-filter: brightness(0.8);
 	width: 100%;
 	height: 100%;
 	font-size: 48px;
 	font-weight: 500;
 	line-height: 68.5px;
-	z-index: 5;
 	color: var(--tertiary-color);
 }
 
@@ -49,4 +47,32 @@
 .main .home_content .cards a {
 	text-decoration: none;
 	margin: 25px 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		margin: 0px 20px;
+	}
+	.main .home_background {
+		justify-content: flex-start;
+		width: 100%;
+		height: 111px;
+		margin-bottom: 22px;
+	}
+	.main .home_background p {
+		width: 65%;
+		padding-right: 30%;
+		font-size: 24px;
+		line-height: 24px;
+		padding-left: 16px;
+	}
+	.main .home_content {
+		background-color: transparent;
+	}
+	.main .home_content .cards {
+		padding: 0;
+	}
+	.main .home_content .cards a {
+		margin: 10px 0;
+	}
 }

@@ -84,3 +84,49 @@
 	width: 64px;
 	margin: 0 0 13px 10px;
 }
+
+@media screen and (max-width: 768px) {
+	.details {
+		margin: 0px 20px;
+		min-height: 730px;
+	}
+	.details .details_content .details_description {
+		flex-direction: column;
+	}
+	.details .details_content .details_picture img {
+		border-radius: 10px;
+	}
+	.details .details_content .details_description .details_place {
+		width: 100%;
+	}
+	.details .details_content .details_description .details_place h2 {
+		font-size: 18px;
+		line-height: 25.6px;
+	}
+	.details .details_content .details_description .details_place h2 {
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 5px;
+	}
+	.details .details_content .details_description .details_place .tags {
+		width: 100%;
+	}
+	.details .details_content .details_description .details_owner {
+		width: 100%;
+		margin-top: 15px;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.details .details_content .details_description .details_owner .details_owner_datas {
+		width: 60%;
+	}
+	.details .details_content .details_description .details_owner .details_owner_datas .owner_name {
+		font-size: 12px;
+		line-height: 17px;
+		width: 30%;
+	}
+	.details .details_content .details_description .details_owner .details_owner_datas img {
+		width: 32px;
+	}
+}

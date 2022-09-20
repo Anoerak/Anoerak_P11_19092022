@@ -30,3 +30,26 @@
 	font-size: 18px;
 	line-height: 142.6%;
 }
+
+@media screen and (max-width: 768px) {
+	.error_container {
+		margin: 0 10px;
+		max-height: 730px;
+		justify-content: center;
+	}
+	.error_container h1 {
+		width: 100%;
+		font-size: 96px;
+		text-align: center;
+	}
+	.error_container h2 {
+		width: 100%;
+		font-size: 18px;
+		line-height: 25.5px;
+		text-align: center;
+	}
+	.error_container .error_link {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}

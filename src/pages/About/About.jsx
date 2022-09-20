@@ -1,12 +1,13 @@
 import React from 'react';
 import DropdownDetails from '../../components/DropdownDetails/DropdownDetails';
+import backgroundImg from '../../assets/img/apropos_background.svg';
 
 import './About.css';
 
 const About = () => {
 	return (
 		<div className="about">
-			<div className="about_background"></div>
+			<img src={backgroundImg} className="about_background" alt="image_paysage_montagne"></img>
 			<div className="about_dropdown_menus">
 				<DropdownDetails
 					title="Fiabilité"
