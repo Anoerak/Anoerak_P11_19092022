@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import ContextProvider from './utils/context/context';
+// import ContextProvider from './utils/context/context';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -12,7 +12,7 @@ import About from './pages/About/About';
 
 let App = () => {
 	return (
-		<ContextProvider>
+		<div>
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ let App = () => {
 				<Route path="*" element={<Error />} />
 			</Routes>
 			<Footer />
-		</ContextProvider>
+		</div>
 	);
 };
 

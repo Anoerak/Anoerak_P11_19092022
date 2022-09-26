@@ -1,8 +1,10 @@
 import React from 'react';
-import DropdownDetails from '../../components/DropdownDetails/DropdownDetails';
-import backgroundImg from '../../assets/img/apropos_background.svg';
 
 import './About.css';
+
+import DropdownDetails from '../../components/DropdownDetails/DropdownDetails';
+
+import backgroundImg from '../../assets/img/apropos_background.svg';
 
 const About = () => {
 	return (

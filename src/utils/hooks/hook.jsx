@@ -41,6 +41,7 @@ const useFetch = (url, id) => {
 					});
 					const data = await response.json();
 					const place = data.find((place) => place.id === id);
+					!place && setError({ isError: true, errorMessage: 'Place not found' });
 					setData(place);
 				} catch (error) {
 					setError({ isError: true, errorMessage: error.message });

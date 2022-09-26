@@ -6,21 +6,19 @@ import Carousel from '../../components/Carousel/Carousel';
 import Tag from '../../components/Tag/Tag';
 import Rating from '../../components/Rating/Rating';
 import DropdownDetails from '../../components/DropdownDetails/DropdownDetails';
+import Error from '../../components/Error/Error';
 
 import './Details.css';
 
 const Details = () => {
 	const { id } = useParams();
-	const { data, loading, isError, errorMessage } = useFetch('../datas.json', id);
+	const { data, loading, isError } = useFetch('../datas.json', id);
 	const place = data;
-	const error = errorMessage;
 
 	return (
 		<div className="details">
 			{isError ? (
-				<div className="error">
-					Une erreur est survenue lors du chargement des données : <br /> {error && error}
-				</div>
+				<Error />
 			) : loading ? (
 				<Loader />
 			) : (
